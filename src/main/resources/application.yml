@@ -1,0 +1,21 @@
+camel:
+  springboot:
+    # manten a thread main do camel bloqueada em status running, usado caso o modulo Web do Spring Boot nao esteja habilitado.
+    # main-run-controller: true
+    name: camel-connector
+  rest:
+    api-context-path: api-doc
+    binding-mode: json
+    api-context-route-id: camel-connector-api
+    api-property:
+      api:
+        title: "Camel Connector Banestes"
+        version: "1.0.0"
+        cors: true
+
+
+
+# timer to scheduler
+timer:
+  period: 30000
+
