@@ -3,9 +3,18 @@ package com.dieboldnixdorf.connector.camel.model;
 
 public class Item {
 
+    private String uuid;
     private String formato;
     private int quantidade;
     private Livro livro;
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
 
     public String getFormato() {
         return formato;
@@ -29,5 +38,15 @@ public class Item {
 
     public void setLivro(Livro livro) {
         this.livro = livro;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "uuid='" + uuid + '\'' +
+                ", formato='" + formato + '\'' +
+                ", quantidade=" + quantidade +
+                ", livro=" + livro +
+                '}';
     }
 }

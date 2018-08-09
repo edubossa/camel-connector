@@ -3,6 +3,10 @@ camel:
     # manten a thread main do camel bloqueada em status running, usado caso o modulo Web do Spring Boot nao esteja habilitado.
     # main-run-controller: true
     name: camel-connector
+  component:
+    servlet:
+      mapping:
+        context-path: /api/*
   rest:
     api-context-path: api-doc
     binding-mode: json
@@ -12,6 +16,7 @@ camel:
         title: "Camel Connector Banestes"
         version: "1.0.0"
         cors: true
+
 
 
 

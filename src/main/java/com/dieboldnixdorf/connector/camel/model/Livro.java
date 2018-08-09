@@ -56,4 +56,16 @@ public class Livro {
     public void setValorImpresso(double valorImpresso) {
         this.valorImpresso = valorImpresso;
     }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "codigo='" + codigo + '\'' +
+                ", titulo='" + titulo + '\'' +
+                ", tituloCurto='" + tituloCurto + '\'' +
+                ", nomeAutor='" + nomeAutor + '\'' +
+                ", valorEbook=" + valorEbook +
+                ", valorImpresso=" + valorImpresso +
+                '}';
+    }
 }
